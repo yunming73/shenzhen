@@ -208,29 +208,32 @@
             <div class="main-one-right-content">
               <ul>
                 <li>
-                  <span>05.23</span>
-                  <RouterLink to="/info"
-                    >2023～2024学年度第一学期
+                  <RouterLink to="/info">
+                    2023～2024学年度第一学期
                     校级选修课（通识一般）选课通知</RouterLink
                   >
+                  <span>05.23</span>
                 </li>
                 <li>
-                  <span>05.23</span>
-                  <a href="#"
-                    >2023～2024学年度第一学期 校级选修课（通识一般）选课通知</a
+                  <RouterLink to="/info">
+                    2023～2024学年度第一学期
+                    校级选修课（通识一般）选课通知</RouterLink
                   >
+                  <span>05.23</span>
                 </li>
                 <li>
-                  <span>05.23</span>
-                  <a href="#"
-                    >2023～2024学年度第一学期 校级选修课（通识一般）选课通知</a
+                  <RouterLink to="/info">
+                    2023～2024学年度第一学期
+                    校级选修课（通识一般）选课通知</RouterLink
                   >
+                  <span>05.23</span>
                 </li>
                 <li>
-                  <span>05.23</span>
-                  <a href="#"
-                    >2023～2024学年度第一学期 校级选修课（通识一般）选课通知</a
+                  <RouterLink to="/info">
+                    2023～2024学年度第一学期
+                    校级选修课（通识一般）选课通知</RouterLink
                   >
+                  <span>05.23</span>
                 </li>
               </ul>
             </div>
@@ -806,9 +809,15 @@ export default {
             line-height: 20px;
             margin-bottom: 12px;
             font-size: 14px;
+            display: flex;
+            flex-direction: row-reverse;
             a:active,
             :hover {
               color: #23527c;
+            }
+            a:active,
+            a:hover + span {
+              background: #bc3b36;
             }
           }
           span {
@@ -822,10 +831,10 @@ export default {
             font-size: 12px;
             margin-right: 15px;
             color: #999999;
-            span:active,
-            :hover {
-              background: #23527c;
-            }
+          }
+          span:active,
+          span:hover {
+            background: #bc3b36;
           }
         }
       }
