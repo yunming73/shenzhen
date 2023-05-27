@@ -815,7 +815,7 @@ export default {
             :hover {
               color: #23527c;
             }
-            a:active,
+            a:active + span,
             a:hover + span {
               background: #bc3b36;
             }
